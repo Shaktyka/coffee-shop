@@ -144,6 +144,7 @@ body {
 .logo {
   display: flex;
   margin-right: 40px;
+  cursor: pointer;
 }
 
 .navigation__list {
@@ -258,6 +259,8 @@ body {
 
 .good__img-wrap {
   display: flex;
+  max-width: 167px;
+  max-height: 134px;
   margin: 0;
 }
 
@@ -278,4 +281,24 @@ body {
   line-height: 20px;
 }
 
-/* other */
+/* footer */
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 21px;
+}
+
+.footer__devider {
+  margin-bottom: 0;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.footer .navigation__link {
+  color: var(--black);
+}
