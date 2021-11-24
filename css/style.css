@@ -35,6 +35,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+  background-color: var(--white);
   font-family: "Merienda", cursive;
   font-size: 14px;
   line-height: 20.22px;
@@ -97,10 +98,11 @@ body {
 }
 
 .module-title {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   font-size: 24px;
   line-height: 35px;
+  text-align: center;
 }
 
 .page__title {
@@ -163,6 +165,7 @@ body {
 
 .hero {
   padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
   color: var(--white);
 }
@@ -187,6 +190,27 @@ body {
   font-size: 24px;
   line-height: 45px;
   margin-bottom: 18px;
+}
+
+/* about */
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.about__devider {
+  margin-bottom: 40px;
+}
+
+.about__text {
+  max-width: 590px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /* other */
