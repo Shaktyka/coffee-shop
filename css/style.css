@@ -15,8 +15,14 @@
   --black: #000000;
   --white: #ffffff;
   --beige-light: #ead5be;
-  --beige-dark: #b8a36e;
+  --beige-dark: #8e825c;
   --wood: #5f4632;
+
+  --shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  --max-width: 1440px;
+  --nav-width: 1144px;
+  --container-width: 900px;
 }
 
 /* global */
@@ -26,7 +32,8 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Merienda", cursive;
   font-size: 14px;
@@ -42,7 +49,7 @@ body {
 }
 
 .list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -54,6 +61,21 @@ body {
 
 .btn {
   cursor: pointer;
+  background-color: none;
+  text-decoration: none;
+}
+
+.btn--action {
+  padding: 4px 41px 4px;
+  border: solid 1px var(--white);
+  border-radius: 3px;
+  color: var(--white);
+  font-weight: normal;
+  line-height: 14px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .visually-hidden {
@@ -81,6 +103,90 @@ body {
   line-height: 35px;
 }
 
+.page__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 58px;
+  text-shadow: var(--shadow-light);
+}
+
 /* index */
+
+/* header */
+
+.header {
+  min-height: 640px;
+  background-color: var(--beige-dark);
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 30px;
+}
+
+.header .container {
+  max-width: var(--nav-width);
+}
+
+.header__navigation {
+  padding-bottom: 2px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.logo {
+  display: flex;
+  margin-right: 40px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__item {
+  margin-right: 40px;
+}
+
+.navigation__link {
+  color: var(--white);
+  font-size: 12px;
+  line-height: 17px;
+  text-shadow: var(--shadow-light);
+}
+
+/* hero */
+
+.hero {
+  padding-top: 110px;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero__title {
+  margin-bottom: 10px;
+}
+
+.hero__devider {
+  margin-bottom: 20px;
+}
+
+.devider {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__slogan {
+  max-width: 531px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 45px;
+  margin-bottom: 18px;
+}
 
 /* other */
