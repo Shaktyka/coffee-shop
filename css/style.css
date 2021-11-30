@@ -312,7 +312,7 @@ body {
 
 /* СТРАНИЦА Coffee */
 
-.page--coffee .header {
+.page--inner .header {
   min-height: 260px;
   background-image: url("../img/coffee-bg.jpg");
   padding-top: 30px;
@@ -320,12 +320,12 @@ body {
   background-size: cover;  
 }
 
-.page--coffee .hero {
+.page--inner .hero {
   padding-top: 60px;
   padding-bottom: 0;
 }
 
-.page--coffee .hero__title {
+.page--inner .hero__title {
   margin-bottom: 0;
 }
 
@@ -567,3 +567,7 @@ input:-ms-input-placeholder {text-overflow:ellipsis;}
   text-align: right;
   color: #000000;
 }
+
+/* Coffee Item Page */
+
+
