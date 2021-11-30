@@ -382,6 +382,107 @@ body {
   margin-bottom: 25px;
 }
 
+/* Блок со списком продуктов */
+
+.products {
+  padding-top: 60px;
+}
+
+/* Filter */
+
+.form {
+  max-width: 692px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.form__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form__text {
+  margin: 0;
+}
+
+label {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form__input {
+  width: 180px;
+  height: 30px;
+  padding: 6px 36px;
+  background: #FFFFFF;
+  text-align: center;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 17px;
+}
+::-moz-placeholder          {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 17px;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 17px;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 17px;
+}
+
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;} 
+input:-moz-placeholder      {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;}   
+
+.filter__search .form__text {
+  margin-right: 20px;
+}
+
+.filter__filter {
+  max-width: 355px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.filter__filter .form__text {
+  margin-right: 35px;
+}
+
+.form__button {
+  padding: 7px 20px 6px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: 12px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.form__button:not(:first-child) {
+  margin-left: 5px;
+}
+
 /* Контейнер карточек */
 
 .cards__list {

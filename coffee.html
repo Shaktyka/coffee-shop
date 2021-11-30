@@ -73,7 +73,21 @@
       <div class="container">
         <!-- Фильтр -->
         <div class="filter">
-
+          <form class="form filter__form" name="filter" method="get" action="#">
+            <div class="form__group filter__search">
+              <p class="form__text">Looking for</p>
+              <label class="form__label" for="search">
+                <span class="visually-hidden">Search field</span>
+                <input class="form__input" id="search" type="text" name="search" placeholder="start typing here...">
+              </label>
+            </div>
+            <div class="form__group filter__filter">
+              <p class="form__text">Or filter</p>
+              <button class="form__button" type="button" name="brazil">Brazil</button>
+              <button class="form__button" type="button" name="kenya">Kenya</button>
+              <button class="form__button" type="button" name="columbia">Columbia</button>
+            </div>
+          </form>
         </div>
         <!-- Список товаров -->
         <ul class="cards__list">
